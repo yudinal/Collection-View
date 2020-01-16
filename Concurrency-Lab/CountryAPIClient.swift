@@ -10,7 +10,7 @@ import Foundation
 
 struct CountryAPIClient {
     static func getCountry(completion: @escaping (Result<[CountryData], AppError>) -> ()) {
-        let endpointURLString = "https://restcountries.eu/rest/v2/name/united"
+        let endpointURLString = "https://restcountries.eu/rest/v2/"
         
         NetworkHelper.shared.performDataTask(with: endpointURLString) { (result) in
             switch result {
