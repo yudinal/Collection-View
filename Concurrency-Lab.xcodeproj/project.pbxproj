@@ -76,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A622927923D1044D0004C30D /* CollectionViewFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A622927723D0FC050004C30D /* FlagViewController.swift */,
+				A622927523D0F32A0004C30D /* FlagCell.swift */,
+			);
+			path = CollectionViewFiles;
+			sourceTree = "<group>";
+		};
 		A6A354D223A0343100D1354C = {
 			isa = PBXGroup;
 			children = (
@@ -100,15 +109,14 @@
 				A6A354DE23A0343100D1354C /* AppDelegate.swift */,
 				A6A354E023A0343100D1354C /* SceneDelegate.swift */,
 				A6A354E223A0343100D1354C /* ViewController.swift */,
-				A622927723D0FC050004C30D /* FlagViewController.swift */,
 				A6A3551223A07B7300D1354C /* DetailViewController.swift */,
 				A6A3551023A0571700D1354C /* CustomCell.swift */,
-				A622927523D0F32A0004C30D /* FlagCell.swift */,
 				A6A3550023A03D6C00D1354C /* CountryData.swift */,
 				A6A3550C23A054E000D1354C /* FlagImageClient.swift */,
 				A6A3550423A0419100D1354C /* CountryAPIClient.swift */,
 				A6A3550623A044A000D1354C /* NetworkHelper.swift */,
 				A6A3550823A0498D00D1354C /* AppError.swift */,
+				A622927923D1044D0004C30D /* CollectionViewFiles */,
 				A6A354E423A0343100D1354C /* Main.storyboard */,
 				A6A354E723A0343500D1354C /* Assets.xcassets */,
 				A6A354E923A0343500D1354C /* LaunchScreen.storyboard */,

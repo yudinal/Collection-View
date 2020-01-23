@@ -43,6 +43,15 @@ class FlagViewController: UIViewController {
         loadCountries()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailViewController = segue.destination as? DetailViewController, let indexPath = collectionView.indexPathsForSelectedItems else {
+            fatalError("failed to get indexPath and DetailViewController")
+        }
+        let chosenFlag = flagImage[indexPath.first!.row]
+        detailViewController.country = chosenFlag
+        
+    }
+    
     func filterCountries (for searchText: String) {
         guard !searchText.isEmpty else {return}
         CountryAPIClient.getCountry { (result) in

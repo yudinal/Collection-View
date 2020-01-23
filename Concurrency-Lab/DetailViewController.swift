@@ -26,8 +26,8 @@ class DetailViewController: UIViewController {
             fatalError(" country is nil, verify prepare(for segue: )")
         }
         nameLabel.text = chosenCountry.name
-        capitalLabel.text = chosenCountry.capital
-        populationLabel.text = chosenCountry.population.description
+        capitalLabel.text = ("Capital: \(chosenCountry.capital)")
+        populationLabel.text = ("Population: \(chosenCountry.population.description) people")
         
         let imageURL = "https://www.countryflags.io/\(chosenCountry.alpha2Code)/flat/64.png"
         

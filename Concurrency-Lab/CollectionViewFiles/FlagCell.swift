@@ -17,8 +17,8 @@ class FlagCell: UICollectionViewCell {
     
     func configureCell(for country: CountryData) {
         nameLabel.text = country.name
-        capitalLabel.text = country.capital
-        populationLabel.text = country.population.description
+        capitalLabel.text = ("Capital: \(country.capital)")
+        populationLabel.text = ("Population: \(country.population.description)")
         
         
         FlagImageClient.fetchImage(for: "https://www.countryflags.io/\(country.alpha2Code)/flat/64.png") { [weak self] (result) in
